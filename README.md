@@ -34,6 +34,17 @@ then use GNU Stow to create symlinks
 stow .
 ```
 
+
+To stow a single package e.g. nvim use the following command from within the `~/.dotfiles` directory
+
+```
+stow -d .config -S nvim -t ~/.config/nvim -v
+```
+
+To perform a 'dry run' pass the `-n` flag
+To provide more verbose logging pass the flag `-vvv`
+
+
 ## Initial content sources
 
 [Hyperland for Newbs](https://typecraft.dev/hyprland-for-newbs) and 
