@@ -1,0 +1,33 @@
+# https://www.gnu.org/software/stow/manual/stow.html#Types-And-Syntax-Of-Ignore-Lists 
+# Documentation provides this as example of default ignore list if 
+# .stow-global-ignore or .stow-local-ignore files don't exist
+
+# Comments and blank lines are allowed.
+
+RCS
+.+,v
+
+CVS
+\.\#.+       # CVS conflict files / emacs lock files
+\.cvsignore
+
+\.svn
+_darcs
+\.hg
+
+\.git
+\.gitignore
+\.gitmodules
+
+.+~          # emacs backup files
+\#.*\#       # emacs autosave files
+
+^/README.*
+^/LICENSE.*
+^/COPYING
+
+
+# package specific files 
+^/.*\.txt
+^/lazy-lock.json
+^/.*wip.*
