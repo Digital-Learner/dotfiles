@@ -29,5 +29,4 @@ _darcs
 
 # package specific files 
 ^/.*\.txt
-^/lazy-lock.json
 ^/.*wip.*
