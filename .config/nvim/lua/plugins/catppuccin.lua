@@ -12,7 +12,7 @@ return {
         light = "latte",
         dark = "mocha",
       },
-      transparent_background = false, -- disables setting the background color.
+      transparent_background = true, -- disables setting the background color.
       show_end_of_buffer = false, -- shows the '~' characters after the end of buffers
       term_colors = false, -- sets terminal colors (e.g. `g:terminal_color_0`)
       dim_inactive = {
@@ -38,7 +38,17 @@ return {
         operators = {},
         -- miscs = {}, -- Uncomment to turn off hard-coded styles
       },
-      color_overrides = {},
+      color_overrides = {
+        -- to change theme similar to kanagawa example in MrJakob's
+        -- Neovim from Scratch: Part 2 video, which takes definitions from
+        -- https://github.com/rebelot/kanagawa.nvim/blob/master/lua/
+          -- kanagawa/highlights/treesitter.lua
+
+        -- would use as base the following file
+        -- https://github.com/catppuccin/nvim/blob/main/lua/
+          -- catppuccin/groups/integrations/treesitter.lua
+        --
+        },
       custom_highlights = {},
     })
 
